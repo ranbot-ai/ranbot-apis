@@ -1,0 +1,125 @@
+.sectionTitle {
+  text-align: center;
+  color: #4f46e5;
+  font-size: 2rem;
+  margin: 3rem 0 1rem 0;
+}
+
+.aboutSection {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  background: #f7f8fa;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 8px #0001;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin: 2.5rem 0;
+}
+
+.aboutCard {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 8px #6366f122;
+  padding: 2rem 1.5rem;
+  text-align: left;
+  transition: box-shadow 0.2s;
+}
+.aboutCard:hover {
+  box-shadow: 0 8px 32px #6366f144;
+}
+
+.aboutCard h3 {
+  color: #4f46e5;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.aboutCard p {
+  color: #555;
+  font-size: 1.08rem;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+.teamCard {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 8px #6366f122;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.teamCard:hover {
+  box-shadow: 0 8px 32px #6366f144;
+}
+.teamAvatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.7rem;
+  border: 2px solid #e0e7ff;
+}
+.teamName {
+  color: #4f46e5;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+.teamRole {
+  color: #888;
+  font-size: 0.98rem;
+  margin-bottom: 0.5rem;
+}
+.teamBio {
+  color: #444;
+  font-size: 0.98rem;
+}
+
+.faqCard {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 32px #6366f122, 0 2px 8px #4f46e511;
+  border: 2px solid #e0e7ff;
+  margin-bottom: 2rem;
+  padding: 2rem 2.2rem 1.5rem 2rem;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.faqCard:hover {
+  box-shadow: 0 8px 40px #6366f144, 0 2px 8px #4f46e522;
+  border-color: #6366f1;
+}
+.faqQuestion {
+  color: #3b5bfd;
+  font-size: 1.18rem;
+  font-weight: 800;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.2px;
+}
+.faqAnswer {
+  color: #222;
+  font-size: 1.08rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+
+@media (max-width: 600px) {
+  .aboutSection {
+    padding: 1rem;
+  }
+  .aboutGrid, .teamGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
