@@ -9,13 +9,13 @@ const Footer: React.FC = () => (
       <div className={styles.footerCol}>
         <h4>RanBOT</h4>
         <ul>
+          <li><Link to="/">Home</Link></li>
           <li><Link to="/pricing">Pricing</Link></li>
         </ul>
       </div>
       <div className={styles.footerCol}>
         <h4>Our Services</h4>
         <ul>
-          <li><Link to="/">Home</Link></li>
           <li><Link to="/logo">Logo</Link></li>
           <li><Link to="/screenshot">Screenshot</Link></li>
           <li><Link to="/insights">Insights</Link></li>
