@@ -48,7 +48,7 @@ export async function getWebsiteLogos(url: string): Promise<{ [size: string]: st
       try {
         await fs.writeFile(icoPath, faviconBuffer);
         console.log('[LOGO] Written ICO to temp file:', icoPath);
-        const worker = spawn('node', [path.resolve('ico-to-png-worker.mjs'), icoPath], { stdio: ['ignore', 'pipe', 'pipe'] });
+        const worker = spawn('node', [path.resolve(__dirname, '../../utils/ico-to-png-worker.mjs'), icoPath], { stdio: ['ignore', 'pipe', 'pipe'] });
         let stdout = Buffer.alloc(0);
         let stderr = Buffer.alloc(0);
         worker.stdout.on('data', (data) => { stdout = Buffer.concat([stdout, data]); });

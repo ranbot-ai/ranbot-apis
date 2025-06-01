@@ -14,6 +14,9 @@
 # favicons
 /src/public/favicons/
 
+# tmp
+/tmp/
+
 # misc
 .DS_Store
 .env.local
